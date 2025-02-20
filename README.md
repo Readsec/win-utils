@@ -44,11 +44,6 @@ Before running the tool, ensure the following:
 - **PowerShell**: The script requires PowerShell.
 - **Administrative Privileges**: The script must be executed with administrator rights.
 - **Execution Policy**: Adjust the PowerShell execution policy to allow script execution:
-  
-  Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
-  Set-ExecutionPolicy RemoteSigned -Scope LocalMachine -Force
-  Set-ExecutionPolicy RemoteSigned -Scope Process -Force
-  Unblock-File -Path "PATH"
 
 ## How to Use the Tool
 
@@ -102,10 +97,10 @@ After execution, you can choose to:
 If you encounter an error about the script being blocked, adjust the execution policy:
 
 Tyoe the following command in PowerShell:
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
-Set-ExecutionPolicy RemoteSigned -Scope LocalMachine -Force
-Set-ExecutionPolicy RemoteSigned -Scope Process -Force
-Unblock-File -Path "PATH"
+- **Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force**
+- **Set-ExecutionPolicy RemoteSigned -Scope LocalMachine -Force**
+- **Set-ExecutionPolicy RemoteSigned -Scope Process -Force**
+- **Unblock-File -Path "PATH"**
 
 ### Insufficient Permissions
 
